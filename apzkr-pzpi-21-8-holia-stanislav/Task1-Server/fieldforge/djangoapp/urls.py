@@ -1,0 +1,70 @@
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter # type: ignore
+from .views import (
+    RemoveSoldiersFromTrainingView,
+    AddSoldiersToTrainingView,
+    TrainingDeleteView,
+    TrainingCreateView, 
+    DeactivateUserView, 
+    LoginAPIView, 
+    RegistrationAPIView, 
+    SettingsRetrieveUpdateAPIView, 
+    UserRetrieveUpdateAPIView, 
+    PublicUserRetrieveAPIView,
+    TrainingUpdateView,
+    TrainingRetrieveView,
+    TaskCreateView,
+    TaskDeleteView,
+    TaskUpdateView,
+    TaskRetrieveView,
+    CreateAdminAPIView,
+    UserListView,
+    DeleteAdminAPIView,
+    BanUserAPIView,
+    CreateMineAPIView,
+    DeleteMineAPIView,
+    MineListView,
+    UserTrainingsView,
+    AddMineView,
+    TrainingDetailView,
+    UpdateMineAPIView,
+    CreateResultsView,
+    TrainingResultsView
+)
+
+urlpatterns = [
+    path('user', UserRetrieveUpdateAPIView.as_view()),
+    path('user/sign-up', RegistrationAPIView.as_view()),
+    path('user/login', LoginAPIView.as_view()),
+    path('user/<uuid:uuid>', PublicUserRetrieveAPIView.as_view()),
+    path('user/deactivate', DeactivateUserView.as_view()),
+    path('user/settings', SettingsRetrieveUpdateAPIView.as_view()),
+    path('user/trainings', UserTrainingsView.as_view()),
+
+    path('training/<uuid:uuid>/add_soldiers', AddSoldiersToTrainingView.as_view()),
+    path('training/<uuid:uuid>/remove_soldiers', RemoveSoldiersFromTrainingView.as_view()),
+    path('training/create', TrainingCreateView.as_view()),
+    path('training/<uuid:uuid>/delete', TrainingDeleteView.as_view()),
+    path('training/<uuid:uuid>/update', TrainingUpdateView.as_view()),
+    path('training/<uuid:uuid>', TrainingRetrieveView.as_view()),
+    path('training/<uuid:training_uuid>/add_mine', AddMineView.as_view()),
+    path('training/<uuid:uuid>/details', TrainingDetailView.as_view()),
+    path('training/<uuid:uuid>/create_results', CreateResultsView.as_view()),
+    path('training/<uuid:uuid>/results', TrainingResultsView.as_view()),
+
+
+    path('task/create', TaskCreateView.as_view()),
+    path('task/<uuid:uuid>/delete', TaskDeleteView.as_view()),
+    path('task/<uuid:uuid>/update', TaskUpdateView.as_view()),
+    path('task/<uuid:uuid>', TaskRetrieveView.as_view()),
+
+    path('admin/create', CreateAdminAPIView.as_view()),
+    path('admin/list_users', UserListView.as_view()),
+    path('admin/<uuid:uuid>/delete', DeleteAdminAPIView.as_view()),
+    path('admin/<uuid:uuid>/ban', BanUserAPIView.as_view()),
+    path('admin/add_mine', CreateMineAPIView.as_view()),
+    path('admin/delete_mine/<uuid:uuid>', DeleteMineAPIView.as_view()),
+    path('admin/list_mines', MineListView.as_view()),
+
+    path('mine/update', UpdateMineAPIView.as_view()),
+]

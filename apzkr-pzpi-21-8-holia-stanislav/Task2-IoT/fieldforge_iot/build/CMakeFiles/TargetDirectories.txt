@@ -1,0 +1,3 @@
+/home/stanislav/Desktop/NURE/works/3 курс/2 семестр/апз/apz-pzpi-21-8-holia-stanislav/Task3/apz-pzpi-21-8-holia-stanislav-task3/fieldforge_iot/build/CMakeFiles/FieldForge.dir
+/home/stanislav/Desktop/NURE/works/3 курс/2 семестр/апз/apz-pzpi-21-8-holia-stanislav/Task3/apz-pzpi-21-8-holia-stanislav-task3/fieldforge_iot/build/CMakeFiles/edit_cache.dir
+/home/stanislav/Desktop/NURE/works/3 курс/2 семестр/апз/apz-pzpi-21-8-holia-stanislav/Task3/apz-pzpi-21-8-holia-stanislav-task3/fieldforge_iot/build/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,2 @@
+URL=localhost:8000/api/mine/update
+UUID=223e2565-e89b-72d3-a456-426614178000
