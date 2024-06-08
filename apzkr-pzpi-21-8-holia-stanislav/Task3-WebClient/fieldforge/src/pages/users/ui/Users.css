@@ -1,0 +1,22 @@
+.users-title {
+    margin: 20px 0 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+.users-table {
+    width: 100%;
+}
+
+.users-table th, .users-table td {
+    text-align: center;
+    padding: 10px;
+}
+
+.users-table th {
+    background-color: #f5f5f5;
+}
+
+.users-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}

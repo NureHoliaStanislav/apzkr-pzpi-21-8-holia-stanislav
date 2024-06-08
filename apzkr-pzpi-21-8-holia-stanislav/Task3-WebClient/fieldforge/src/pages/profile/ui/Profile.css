@@ -1,0 +1,20 @@
+.profile-card {
+    margin: 20px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    justify-content: flex-start; 
+    flex-direction: column; 
+    align-items: center;
+    background-color: #585858;
+}
+  
+.profile-title {
+    font-size: 20px;
+    color: #3f51b5;
+}
+  
+.profile-content {
+    font-size: 16px;
+    color: #000;
+}

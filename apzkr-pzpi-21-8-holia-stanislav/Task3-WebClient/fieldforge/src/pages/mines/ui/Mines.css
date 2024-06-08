@@ -1,0 +1,20 @@
+.table {
+    min-width: 650px;
+  }
+  
+  .title {
+    margin: 16px 0;
+  }
+  
+  .button {
+    margin: 0 5px;
+  }
+  
+  .addButton {
+    margin: 16px 0;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+  }
